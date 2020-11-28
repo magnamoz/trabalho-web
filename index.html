@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro HTML</title>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Turret+Road:wght@500&display=swap" 
+        rel="stylesheet">
+     <link href="style.css" rel="stylesheet"/>
+</head>
+</head>
+<body>
+    <header>
+        <div class="nav">
+             <nav>
+                <ul>
+                    <li><a  class="active" href="#card">Inicio</a></li>
+                    <li><a href="#cadastrar">Cadastrar</a></li>
+                    <li><a href="#cadastrados">Cadastrados</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="card" id="card">
+            <h4>Bem-vindo a nossa Landing Page 🚀</h4>
+            <p>Cadastre-se receba informativos com nossas novidades e oportunidades para você!</p>
+        </div>
+
+        <div class="cadastrar" id="cadastrar">
+            <div class="form">
+                <form name="formCadastrar">
+                    <fieldset>
+                        <legend>Cadastra-se</legend>
+                        <div class="form-group">
+                            <label>Código</label>
+                            <input class="input-control" type="number" placeholder="1" size="5" id="codigo"/>
+
+                            <label>Nome completo</label>
+                            <input class="input-control" type="text" placeholder="Maria Júlia da Silva" size="40" id="nome"/>
+
+                             <label>Apelido</label>
+                            <input class="input-control" type="text" placeholder="Maju"size="20" id="apelido"/>
+
+                            <label class="right-inline">RG</label>
+                            <input class="input-control" type="text" placeholder="xx.xxx.xxx-x"size="10" id="rg"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input class="input-control" type="email" placeholder="exemplo@exemplo.com"size="25" id="email"/>
+
+                             <label class="right-inline">Celular</label>
+                            <input class="input-control" type="text" placeholder="(DDD) 99999-9999" size="20" id="celular" />
+                        </div>
+
+                         <div class="form-group">
+                            <label></label>
+                            <button id="salvar"> Salvar</button>
+                            <button id="cancelar"> Cancelar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="cadastrados" id="cadastrados"></div>
+    </section>    
+    <footer class="footer">
+        <p>Feito por Magna Moz<br>
+        <a href="#">⇧ topo</a></p>
+    </footer>
+     <script src="cadastro.js"></script>
+</body>
+</html>

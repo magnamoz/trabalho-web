@@ -1,0 +1,156 @@
+:root{
+    --title-color: #76323f;
+    --primary-color:#d7cec7;
+    --secondary-color:#c09f80;
+    --detail-color: #565656;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--detail-color);
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: var(--title-color);
+}
+
+/*card*/
+.card {
+    margin: 2em auto;
+    width: 90%;
+    text-align: center;
+}
+
+.card h4 {
+    color:var(--title-color);
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.card p {
+      font-size: 1em;
+      font-weight: bold;
+}
+
+/*form*/
+.form{
+    margin: 1em auto;
+    padding: 1em;
+    color: grey;
+}
+
+fieldset {
+    padding: 1.5em;
+    border: 2px var(--detail-color) solid;
+    border-radius: 10px;
+}
+fieldset legend {
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group label.right-inline {
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: auto;
+}
+
+.form-group .input-control {
+    flex: 1 1 auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    min-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/*table*/
+.cadastrados {
+    border: 2px var(--detail-color) solid;
+    border-radius: 10px;
+    width: 97%;
+    margin: 3em auto;
+}
+.table {
+    padding: 1em;
+    margin: 2em auto;
+    width: 95%;
+    border-collapse: collapse;
+}
+.table caption {
+    color: var(--title-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.table  td {
+    text-align: center;
+    border: 1px var(--detail-color) solid;
+}
+.table  th {
+    background-color: var(--secondary-color);
+}
+
+.table td, th {
+    padding: 3px 2px;
+}
+/*footer*/
+.footer {
+    text-align: center;
+    background-color: var(--detail-color);
+    color: white;
+    padding: 0.5em;
+}
+.footer a {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    text-decoration: none;
+}
